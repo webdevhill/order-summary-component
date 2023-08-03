@@ -28,7 +28,11 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/webdevhill/order-summary-component]
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://dulcet-syrniki-867f03.netlify.app/]
+
+### Questions for Front End Mentor community
+
+The provided background .svg for desktop is only 1440px. On xl screens it obviously does not span the device screeen. There are resourceas for expanding the svg view box but that seems beyond the parameters of the style guide. Any opinions or solutions for extra large screens?
 
 ## My process
 
