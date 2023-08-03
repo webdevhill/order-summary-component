@@ -1,0 +1,168 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+  
+
+
+:root {
+    --color-primary-200: hsl(225, 100%, 94%);
+    --color--primary-400: hsl(245, 75%, 52%);
+
+    --color-secondary-100: hsl(225, 100%, 98%);
+    --color-secondary-200: hsl(224, 23%, 55%);
+    --color-secondary-600: hsl(223, 47%, 23%);
+
+    --font-size-base: 1rem;
+
+    --font-family-base: 'Red Hat Display', sans-serif;
+    
+    --font-weight-main: 500;
+    --font-weight-bold: 700;
+    --font-weight-bolder: 900;
+
+
+}
+
+/* General Styling */
+
+body {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-main);
+    background-color: var(--color-primary-200);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    max-width: 350px;
+    margin: auto;
+
+    
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.order {
+    margin: 1rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.order__copy {
+    display: flex;
+    gap: 1.25rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+}
+
+.order__header {
+    font-weight: var(--font-weight-bolder);
+    margin-top: 10px;
+}
+
+.order__para {
+    text-align: center;
+    line-height: 1.75rem;
+    color: var(--color-secondary-200);
+    font-weight: var(--font-weight-main);
+}
+
+.order__plan {
+    background-color: var(--color-secondary-100);
+    border-radius: .5rem;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+}
+
+.plan__image {
+    width: 50px;
+}
+
+.plan__price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 35px 0 15px ;
+}
+
+.plan__price span {
+    font-weight: var(--font-weight-bolder);
+    font-size: 0.9rem ;
+}
+
+.plan__change a {
+    color: var(--color--primary-400) ;
+    font-weight: var(--font-weight-bolder) ;
+    font-size: 0.9rem ;
+}
+
+.plan__change a:hover {
+   color:hsl(249, 78%, 74%);
+   text-decoration: none;
+}
+
+button {
+    color:  hsl(0, 0%, 100%);
+    font-size: 0.9rem;
+    font-weight: var(--font-weight-bolder);
+    background-color: var(--color--primary-400);
+    border: none;
+    border-radius: 10px;
+    padding: 12px 60px;
+    box-shadow: 0px 15px 15px hsla(245, 75%, 52%, 0.2);
+}
+
+button:hover {
+    background-color:hsl(249, 78%, 74%) ;
+}
+
+.order__cancel {
+    color: var(--color-secondary-200);
+    font-size: 0.9rem;
+    font-weight: var(--font-weight-bolder);
+    margin-bottom: 10px;
+}
+
+.order__cancel:hover {
+    color: var(--color-secondary-600);
+}
+
+@media (min-width: 600px) {
+    body {
+        background-image: url(./images/pattern-background-desktop.svg); 
+        background-repeat: no-repeat;
+    }
+} 

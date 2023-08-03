@@ -5,27 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Order summary card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   </style>
 </head>
 <body>
-
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main>
+    <article class="order">
+      <div class="order__image">
+        <img src="./images/illustration-hero.svg" alt="Person dancing with headphones">
+      </div>
+      <div class="order__copy">
+        <h1 class="order__header">
+          Order Summary
+        </h1>
+        <p class="order__para">
+          You can now listen to millions of songs, audiobooks, and podcasts on any 
+          device anywhere you like!
+        </p>
+        <ul class="order__plan">
+          <li class="plan__image"><img src="./images/icon-music.svg" alt="musical note"></li>
+          <li class="plan__price"><span class="type">Annual Plan</span>$59.99/year</li>
+          <li class="plan__change"><a href="#">Change</a></li>
+        </ul>
+        <button class="order__button" >Proceed to Payment</button>
+        <p class="order__cancel">Cancel Order</p>
+      </div>
+    </article>
+  </main>
 </body>
 </html>
